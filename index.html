@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Sokoban</title>
+</head>
+
+<body onload="initSokoban()">
+    <header><img src="http://m.img.brothersoft.com/iphone/1596/522511596_icon.jpg" />
+        <h1>Sokoban</h1>
+    </header>
+    <span>1. game starts with two marked squares(obstacles) - white is glue, blue is water. <br/>
+          2. every 10 seconds a bonus will appear for 5 seconds.grey = clock,red = magnet.</span>
+    <h3>Step Count: &nbsp;&nbsp;<span class="step-count">0</span></h3>
+    <h3 class="msg"></h3>
+    <div class="board-container"></div>
+    <button onclick="startGame()">Restart</button>
+    <div class="popup">
+        <h1>Victorious!!</h1>
+        <h4>Took you <span></span> steps</h4>
+        <button onclick="hidePopup()">Close</button>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
